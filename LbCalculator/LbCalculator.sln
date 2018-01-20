@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LbCalculator", "LbCalculator\LbCalculator.csproj", "{2A9748FC-D60E-40AE-BE5C-988128DFB17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Data", "Calculator.Data\Calculator.Data.csproj", "{181116A3-A973-4288-8CDF-BC5E8D810120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A9748FC-D60E-40AE-BE5C-988128DFB17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9748FC-D60E-40AE-BE5C-988128DFB17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9748FC-D60E-40AE-BE5C-988128DFB17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9748FC-D60E-40AE-BE5C-988128DFB17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181116A3-A973-4288-8CDF-BC5E8D810120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181116A3-A973-4288-8CDF-BC5E8D810120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181116A3-A973-4288-8CDF-BC5E8D810120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181116A3-A973-4288-8CDF-BC5E8D810120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEF6B969-3B7A-4E74-9C98-9B0AA2C2CA4E}
+	EndGlobalSection
+EndGlobal

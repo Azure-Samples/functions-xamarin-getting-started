@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamCalculator"
+             x:Class="XamCalculator.MainPage">
+
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Fill">
+
+        <Entry x:Name="Number1"
+               Placeholder="Enter the first integer"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="Number2"
+               Placeholder="Enter the second integer"
+               PlaceholderColor="Gray" />
+
+        <Button Text="Add"
+                x:Name="AddButton" />
+
+        <Label x:Name="Result"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Text="Ready for operation" />
+
+    </StackLayout>
+</ContentPage>
