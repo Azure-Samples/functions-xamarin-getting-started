@@ -1,3 +1,9 @@
+---
+services: functions
+platforms: dotnet, xamarin
+author: ?????
+---
+
 # Implementing a simple Azure Function with a Xamarin.Forms client
 
 ![Azure Functions logo](./Doc/Img/Azure-Functions-Logo.png)
