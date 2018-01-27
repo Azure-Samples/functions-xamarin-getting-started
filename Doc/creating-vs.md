@@ -2,7 +2,7 @@
 
 The great thing with the Azure tooling is that you can decide what tools you are more comfortable with. You can decide to [create the function in the Azure web portal](./creating.md), or you can take advantage of Visual Studio and its complete suite of tools, including unit testing, performance analysis, local debugging etc. In this section, we will show how the function can be created in Visual Studio, how to run the function locally to test it and how to publish it to Azure.
 
-> Note: You can find more tutorials and quickstarts on the Azure Functions documentation page](http://gslb.ch/a10).
+> Note: You can find more tutorials and quickstarts on the [Azure Functions documentation page](http://gslb.ch/a10).
 
 ## Creating the function application
 
