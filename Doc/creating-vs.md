@@ -2,11 +2,11 @@
 
 The great thing with the Azure tooling is that you can decide what tools you are more comfortable with. You can decide to [create the function in the Azure web portal](./creating.md), or you can take advantage of Visual Studio and its complete suite of tools, including unit testing, performance analysis, local debugging etc. In this section, we will show how the function can be created in Visual Studio, how to run the function locally to test it and how to publish it to Azure.
 
-> Note: You can find more tutorials and quickstarts on the Azure Functions documentation page](http://gslb.ch/a10).
+> Note: You can find more tutorials and quickstarts on the Azure Functions documentation page](http://gslb.ch/a10a-xamfunc18).
 
 ## Creating the function application
 
-To create the function application in Visual Studio, you will need Visual Studio 2017. You can perform these steps in any edition of Visual Studio, [including the free Community edition](http://gslb.ch/a72). In the installer, make sure that the Azure development workload is installed.
+To create the function application in Visual Studio, you will need Visual Studio 2017. You can perform these steps in any edition of Visual Studio, [including the free Community edition](http://gslb.ch/a72a-xamfunc18). In the installer, make sure that the Azure development workload is installed.
 
 ![Visual Studio installer](./Img/2018-01-05_13-43-24.png)
 
@@ -91,7 +91,7 @@ One of the greatest advantages of Visual Studio over the Azure web portal for fu
 
 Now that we have created and tested the function, we can publish it to Azure. In practice for larger applications, the Publishing step would be taken care of by a script and some tooling. Also, we wouldn't publish to a production server first, but we would deploy to a test server and run additional tests before moving the code to production.
 
-In this simple sample, we will use the [Publish feature of Visual Studio](http://gslb.ch/a76) instead.
+In this simple sample, we will use the [Publish feature of Visual Studio](http://gslb.ch/a76a-xamfunc18) instead.
 
 1. In the Solution Explorer, right click on the functions application and select Publish from the context menu.
 
@@ -107,7 +107,7 @@ In this simple sample, we will use the [Publish feature of Visual Studio](http:/
 
 > Note: The function's name should be unique and will appear in the function's URL. For example if the function is named LbCalculator, the domain will be ```https://lbcalculator.azurewebsites.net```.
 
-- Subscription: This is the Azure subscription that will be billed. Note that you can create a free subscription for trial at [https://azure.microsoft.com/free](http://gslb.ch/a17).
+- Subscription: This is the Azure subscription that will be billed. Note that you can create a free subscription for trial at [https://azure.microsoft.com/free](http://gslb.ch/a17a-xamfunc18).
 
 - Resource group: This is a logical grouping of your application's resources, to make it easier to manage them. You can create a new resource group or select am existing one.
 

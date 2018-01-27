@@ -9,8 +9,8 @@ The Xamarin client app that we create here is extremely simple and obviously not
 1. In Visual Studio 2017, select File > New > Project.
 
 > Note: We use Visual Studio 2017 on Windows for this sample, but you can also create Xamarin.Forms applications in Visual Studio for Mac if you prefer. Xamarin is available for free in all editions of Visual Studio, including the free Community edition, on PC and Mac.
-> - [Visual Studio Community Edition for Windows](http://gslb.ch/a72)
-> - [Visual Studio for Mac](http://gslb.ch/a73)
+> - [Visual Studio Community Edition for Windows](http://gslb.ch/a72a-xamfunc18)
+> - [Visual Studio for Mac](http://gslb.ch/a73a-xamfunc18)
 
 2. In the New Project dialog, select the Cross-Platform category, and then Cross-Platform App (Xamarin.Forms) with Visual C#. Name the new application ```XamCalculator```, select a location for the project and press OK.
 
@@ -68,13 +68,13 @@ Later we will see how we can select each application to test it and run it.
 </ContentPage>
 ```
 
-The code above creates a new user interface with 4 UI elements placed under each other. The layout is performed by the ```StackLayout``` panel. By default, the StackLayout uses a vertical layout, but it could also be changed to horizontal if needed. [There are many other layout types](http://gslb.ch/a67) that can be used to create more complex layouts.
+The code above creates a new user interface with 4 UI elements placed under each other. The layout is performed by the ```StackLayout``` panel. By default, the StackLayout uses a vertical layout, but it could also be changed to horizontal if needed. [There are many other layout types](http://gslb.ch/a67a-xamfunc18) that can be used to create more complex layouts.
 
-- The first and second UI elements are [Entry controls](http://gslb.ch/a68) where the user will be able to enter some text. We will access this text from the code behind. Note how we use the [Placeholder property](http://gslb.ch/a69) to show a placeholder text when the field is empty. The controls are named ```Number1``` and ```Number2```.
+- The first and second UI elements are [Entry controls](http://gslb.ch/a68a-xamfunc18) where the user will be able to enter some text. We will access this text from the code behind. Note how we use the [Placeholder property](http://gslb.ch/a69a-xamfunc18) to show a placeholder text when the field is empty. The controls are named ```Number1``` and ```Number2```.
 
-- The third element is a [Button control](http://gslb.ch/a70). This control can be clicked by the user, which will create an event that we will respond to. The button is named ```AddButton```.
+- The third element is a [Button control](http://gslb.ch/a70a-xamfunc18). This control can be clicked by the user, which will create an event that we will respond to. The button is named ```AddButton```.
 
-- The last element is a [Label control](http://gslb.ch/a71), used to show some simple text output to the user. The Label is named ```Result```.
+- The last element is a [Label control](http://gslb.ch/a71a-xamfunc18), used to show some simple text output to the user. The Label is named ```Result```.
 
 6. Open the MainPage.xaml.cs now. This C# code file is what we call "code behind". This is the view's controller, where we will handle events and modify the UI accordingly.
 

@@ -1,6 +1,6 @@
 # Creating the Azure Function in the Azure Web Portal
 
-In this section, we will build the Azure Functions application in the Azure web portal and then add an HTTP Triggered function. This will allow us to call the function from the Xamarin client, for example with an [HttpClient](http://gslb.ch/a75) instance.
+In this section, we will build the Azure Functions application in the Azure web portal and then add an HTTP Triggered function. This will allow us to call the function from the Xamarin client, for example with an [HttpClient](http://gslb.ch/a75a-xamfunc18) instance.
 
 > Note: If you prefer, you can create the Azure Function in Visual Studio 2017 instead. [A detailed tutorial can be found here](./creating-vs.md).
 
@@ -8,7 +8,7 @@ To create the Azure Functions application in the Azure portal, follow these step
 
 1. Log into the [Azure Portal](http://portal.azure.com) with your user account.
 
-> Note: You will need an Azure account to create this sample. If you don't have one already, [you can get a free trial account here](http://gslb.ch/a17).
+> Note: You will need an Azure account to create this sample. If you don't have one already, [you can get a free trial account here](http://gslb.ch/a17a-xamfunc18).
 
 2. Click the "Create a resource" menu item.
 
@@ -58,12 +58,12 @@ To create the Azure Functions application in the Azure portal, follow these step
 
 ![Application submenus](./Img/2017-12-25_11-40-33.png)
 
-Now we need to choose what will *trigger* the function that we will create. There are a large number of triggers available and we cannot review all of them here, but there is [documentation available on our Docs website](http://gslb.ch/a63). The most common triggers are:
+Now we need to choose what will *trigger* the function that we will create. There are a large number of triggers available and we cannot review all of them here, but there is [documentation available on our Docs website](http://gslb.ch/a63a-xamfunc18). The most common triggers are:
 
-- [HTTP Trigger](http://gslb.ch/a65): The function will be executed when an HTTP request arrives. This is the type of trigger we will use.
-- [Timer trigger](http://gslb.ch/a66): The function is executed every interval of time, where the interval is specified [by a CRON expression](https://en.wikipedia.org/wiki/Cron#CRON_expression).
-- [Blob trigger](http://gslb.ch/a64): The function is executed when a file is uploaded to a given blob container
-- [and more...](http://gslb.ch/a63)
+- [HTTP Trigger](http://gslb.ch/a65a-xamfunc18): The function will be executed when an HTTP request arrives. This is the type of trigger we will use.
+- [Timer trigger](http://gslb.ch/a66a-xamfunc18): The function is executed every interval of time, where the interval is specified [by a CRON expression](https://en.wikipedia.org/wiki/Cron#CRON_expression).
+- [Blob trigger](http://gslb.ch/a64a-xamfunc18): The function is executed when a file is uploaded to a given blob container
+- [and more...](http://gslb.ch/a63a-xamfunc18)
 
 8. Click on the "Custom function" button as shown below.
 
