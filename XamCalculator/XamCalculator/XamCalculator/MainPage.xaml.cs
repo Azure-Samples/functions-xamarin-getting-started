@@ -8,7 +8,7 @@ namespace XamCalculator
 {
     public partial class MainPage : ContentPage
     {
-        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}?code=Ns5i7ag4xDCCrRHpZ8lsnF4WYa2gOet2bM5bYChzZld1Nq2knJIu9w==";
+        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}?code=r9o3qY/Zy0slf4IddK0qq8dNxkDraglwGKaKaCp3D8PFGAorrWosIQ==";
 
         private HttpClient _client;
 
