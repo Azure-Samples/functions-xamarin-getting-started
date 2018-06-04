@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\sample-azure-simplexamarinfunction\LbCalculator\Calculator.Data\Calculator.Data.csproj" />
     <ProjectReference Include="..\..\..\LbCalculator\Calculator.Data\Calculator.Data.csproj" />
   </ItemGroup>
 
