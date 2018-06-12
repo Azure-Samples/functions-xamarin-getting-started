@@ -2,7 +2,7 @@
 
 The great thing with the Azure tooling is that you can decide what tools you are more comfortable with. You can decide to [create the function in the Azure web portal](./creating.md), or you can take advantage of Visual Studio and its complete suite of tools, including unit testing, performance analysis, local debugging etc. In this section, we will show how the function can be created in Visual Studio, how to run the function locally to test it and how to publish it to Azure.
 
-> Note: You can find more tutorials and quickstarts on the Azure Functions documentation page](http://gslb.ch/a10a-xamfunc18).
+> Note: You can find more tutorials and quickstarts on the [Azure Functions documentation page](http://gslb.ch/a10a-xamfunc18).
 
 ## Creating the function application
 
@@ -24,13 +24,13 @@ To create the function application in Visual Studio, you will need Visual Studio
     - Under Storage Account, select None. This particular sample doesn't require storage. However if your function needs data, tables, etc., you may want to connect it to an Azure Storage account.
     - Set Access rights to Function.
 
-![New Template dialog](./Img/2018-01-15_15-01-00.png)
+    ![New Template dialog](./Img/2018-01-15_15-01-00.png)
 
-When the function application is created, it gives the default name "Function1" to the function. You will need to rename it to something more meaningful.
+    When the function application is created, it gives the default name "Function1" to the function. You will need to rename it to something more meaningful.
 
-5. Rename the ```Function1.cs``` file to ```Add.cs```.
+6. Rename the ```Function1.cs``` file to ```Add.cs```.
 
-6. Open the ```Add.cs``` file in the code editor and modify the code as shown here:
+7. Open the ```Add.cs``` file in the code editor and modify the code as shown here:
 
 ```CS
 public static class Add
