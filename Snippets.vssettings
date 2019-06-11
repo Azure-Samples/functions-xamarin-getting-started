@@ -1,0 +1,58 @@
+<UserSettings><ApplicationIdentity version="16.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="TabCount">0</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">6BE0FAD70D8A105178875027649B5A8B</PropertyValue><PropertyValue name="Item0.Name">-- FUNCTIONS ------</PropertyValue><PropertyValue name="Item0.UseDefaultName">false</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">2</PropertyValue><PropertyValue name="Item0.OriginalName">Text:         private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">6BE0FAD70D8A105178875027649B5A8B</PropertyValue><PropertyValue name="Item1.Name">URL</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">BFC7653FDA86856C0744F71C1FFF3F51</PropertyValue><PropertyValue name="Item2.Name">Http Client</PropertyValue><PropertyValue name="Item2.UseDefaultName">false</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">
+        private HttpClient _client;
+
+        private HttpClient Client
+        {
+            get
+            {
+                if (_client == null)
+                {
+                    _client = new HttpClient();
+                }
+
+                return _client;
+            }
+        }
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">AFC44C1CF8382F1A7F11DAADDA5076CB</PropertyValue><PropertyValue name="Item3.Name">-&gt; Clicked 1</PropertyValue><PropertyValue name="Item3.UseDefaultName">false</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">                int number1 = 0, number2 = 0;
+
+                var success = int.TryParse(Number1.Text, out number1)
+                    &amp;&amp; int.TryParse(Number2.Text, out number2);
+
+                if (!success)
+                {
+                    await DisplayAlert("Error in inputs", "You must enter two integers", "OK");
+                    return;
+                }
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">12F9962A6B1B228AD193F525F26DC726</PropertyValue><PropertyValue name="Item4.Name">-&gt; Clicked 2</PropertyValue><PropertyValue name="Item4.UseDefaultName">false</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">
+                Result.Text = "Please wait...";
+                AddButton.IsEnabled = false;
+                Exception error = null;
+
+                try
+                {
+                }
+                catch (Exception ex)
+                {
+                    error = ex;
+                }
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">87AA3C70C9AC942243359E78EC17BF2A</PropertyValue><PropertyValue name="Item5.Name">-&gt; try</PropertyValue><PropertyValue name="Item5.UseDefaultName">false</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">                    var url = Url.Replace("{num1}", number1.ToString())
+                        .Replace("{num2}", number2.ToString());
+
+                    var json = await Client.GetStringAsync(url);
+
+                    var deserialized = JsonConvert.DeserializeObject&lt;AdditionResult&gt;(json);
+
+                    Result.Text = deserialized.Result.ToString();
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">85C88767A65711355467815ABBDF5D36</PropertyValue><PropertyValue name="Item6.Name">-&gt; Clicked 3</PropertyValue><PropertyValue name="Item6.UseDefaultName">false</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">
+                if (error != null)
+                {
+                    Result.Text = "Error!!";
+                    await DisplayAlert("There was an error", error.Message, "OK");
+                }
+
+                AddButton.IsEnabled = true;
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="ItemCount">7</PropertyValue></Category></Category></UserSettings>
