@@ -1,13 +1,10 @@
-
-using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs.Host;
-using Newtonsoft.Json;
 using Calculator.Data;
 using System;
+using Microsoft.Extensions.Logging;
 
 namespace LbCalculator
 {
@@ -22,9 +19,9 @@ namespace LbCalculator
             HttpRequest req, 
             int num1,
             int num2,
-            TraceWriter log)
+            ILogger log)
         {
-            log.Info($"C# HTTP trigger function processed a request with {num1} and {num2}");
+            log.LogInformation($"C# HTTP trigger function processed a request with {num1} and {num2}");
 
             var result = new AdditionResult
             {
