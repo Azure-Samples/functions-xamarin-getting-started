@@ -1,7 +1,13 @@
 ---
-services: functions
-platforms: dotnet, xamarin
-author: LBugnion
+page_type: sample
+description: "Implement a simple Azure Function in the Azure Portal and build a cross-platform client with Xamarin.Forms."
+languages:
+- csharp
+products:
+- dotnet
+- azure
+- xamarin
+- azure-functions
 ---
 
 # Implementing a simple Azure Function with a Xamarin.Forms client
