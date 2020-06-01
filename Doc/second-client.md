@@ -11,7 +11,16 @@ In the previous step, we copied the function's URL for later usage. Make sure to
 
 2. Open the MainPage.xaml.cs file.
 
-3. Replace the ```MainPage``` constructor with the following code:
+3. Add the library System.Net.Http to the Using section at the top:
+
+```CS
+using System.ComponentModel;
+using System.Net.Http;
+using Xamarin.Forms;
+
+```
+
+4. Replace the ```MainPage``` constructor with the following code:
 
 ```CS
 public partial class MainPage : ContentPage
